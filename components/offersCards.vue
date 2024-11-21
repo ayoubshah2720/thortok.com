@@ -1,24 +1,24 @@
 <template>
     <div class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
       <!-- Main Image -->
-      <img src="/assets/images/cf1.png" alt="Main Image" class="w-full h-64 object-cover">
+      <img :src="card?.cardimage" alt="Main Image" class="w-full h-64 object-cover">
   
       <!-- Card Content -->
       <div class="p-2">
         <!-- Circular Profile Image -->
         <div class="flex items-center justify-between mt-2">
             <div class="flex items-center gap-1">
-            <img src="/assets/images/user2.png" alt="Profile Image" class="w-10 h-10 rounded-full border-4 border-white shadow-lg">
-            <p class="text-center text-md font-semibold">{{ 'Ch. Ratana' }}</p>
+            <img :src="card?.userimage" alt="Profile Image" class="w-10 h-10 rounded-full border-4 border-white shadow-lg">
+            <p class="text-center text-md font-semibold">{{ card?.username }}</p>
         </div>
         <div class="flex items-center gap-2">
-            <p class="text-center text-lg font-semibold line-through">{{ '$40' }}</p>
-            <p class="text-center text-lg font-semibold">{{ '$35' }}</p>
+            <p class="text-center text-lg font-semibold line-through">{{ card?.price }}</p>
+            <p class="text-center text-lg font-semibold">{{ card?.dicountedPrice }}</p>
         </div>
         </div>
   
         <!-- Title -->
-        <p class="mt-2 pl-2 text-xl font-bold">{{ 'Sala Blue' }}</p>
+        <p class="mt-2 pl-2 text-xl font-bold">{{ card?.title }}</p>
   
         <!-- Buttons -->
         <div class="flex justify-around mt-2">
@@ -36,24 +36,7 @@
   </template>
   
   <script setup>
-    // const props = defineProps({
-    //   mainImage: {
-    //     type: String,
-    //     required: true,
-    //   },
-    //   profileImage: {
-    //     type: String,
-    //     required: true,
-    //   },
-    //   username: {
-    //     type: String,
-    //     required: true,
-    //   },
-    //   title: {
-    //     type: String,
-    //     required: true,
-    //   },
-    // });
+  const {card} = defineProps(['card']);
   </script>
   
   <style scoped>
