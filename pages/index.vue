@@ -1,5 +1,5 @@
 <template>
-  <div class="m-4">
+  <div class="my-4">
     <!-- <nav class="bg-blue-500 p-4">
   <div class="max-w-7xl mx-auto flex justify-between items-center">
     <div class="text-white text-xl font-bold">
@@ -16,10 +16,7 @@
     </button>
   </div>
 </nav> -->
-    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-      Hi from Ayoub Shah
-    </h1>
-    <div class="mt-4">
+    <div class="mt-8">
       <img src="../assets/images/HERO.png" alt="hero.png" />
     </div>
 
@@ -80,7 +77,7 @@
 
     <!-- 3rd example -->
     <div
-      class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 bg-[#EFF1D9] mt-4 max-w-screen-xl mx-auto px-4"
+      class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 bg-[#EFF1D9] mt-8 max-w-screen-xl mx-auto px-4"
     >
       <h2 class="text-xl font-bold p-1">Discover our current offers</h2>
       <p class="text-base font-light p-1">
@@ -142,7 +139,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col md:flex-row mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-screen-xl mx-auto px-4"
+        class="flex flex-col md:flex-row mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-screen-xl mx-auto px-4"
       >
         <div class="flex-1 rounded-lg" v-for="(card, index) in cardsData">
           <OffersCards />
@@ -152,7 +149,7 @@
 
     <!-- 4th example -->
     <div
-      class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 mt-4 max-w-screen-xl mx-auto px-4"
+      class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 mt-8 max-w-screen-xl mx-auto px-4"
     >
       <p class="text-xl font-bold custom-underline">Browse by collections</p>
       <p class="text-base font-light p-1">
@@ -162,7 +159,7 @@
     </div>
 
     <div
-      class="flex flex-col md:flex-row mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-xl mx-auto px-4"
+      class="flex flex-col md:flex-row mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-xl mx-auto px-4"
     >
       <div class="flex-1 rounded-lg" v-for="(card, index) in cardsData">
         <Cards :key="index" :card="card" />
@@ -170,7 +167,7 @@
     </div>
 
     <div
-      class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 mt-4 max-w-screen-xl mx-auto px-4"
+      class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 mt-8 max-w-screen-xl mx-auto px-4"
     >
       <h2 class="text-xl font-bold p-1">Fonts Collection</h2>
       <p class="text-base font-light p-1">
@@ -319,9 +316,9 @@
 
     <!-- 3rd example -->
     <div
-      class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 bg-[#EFF1D9] mt-4 max-w-screen-xl mx-auto px-4"
+      class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 bg-[#EFF1D9] mt-8"
     >
-      <div class="flex items-center justify-between p-1">
+      <div class="flex items-center justify-between p-1 max-w-screen-xl mx-auto px-4">
         <div>
           <h2 class="text-xl font-bold p-1 custom-underline">
             Featured Creators of the Week
@@ -353,7 +350,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col md:flex-row mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-screen-xl mx-auto px-4"
+        class="flex flex-col md:flex-row mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-screen-xl mx-auto px-4"
       >
         <div class="flex-1 rounded-lg" v-for="(card, index) in cardsData">
           <OffersCards />
@@ -363,7 +360,7 @@
 
     <!-- <Carousel />  -->
     <!-- Choose plan view -->
-    <div class="max-w-screen-lg mx-auto px-4">
+    <div class="max-w-screen-lg mx-auto px-4 mt-8">
       <div>
         <h2 class="text-xl p-1">
           <b>Choose the Plan </b> That Fits Your Needs
@@ -561,19 +558,37 @@
       </div>
     </div>
 
-    <div class="flex">
-      <div class="w-[870px] h-[505px] bg-[#EFF1D9]">
+
+    <!-- Monetize your Talent -->
+    <div class="mt-8">
+       <MonetizeTalent />
+     </div>
+
+    <!-- Freelance Service Programs -->
+    <div class="flex flex-col md:flex-row max-w-screen-lg mx-auto px-4 mt-8">
+      <div class=" flex flex-col md:flex-row w-[570px] h-[350px] bg-[#EFF1D9]">
         <img src="/assets/images/freelance-img.png" alt="freelance-img">
       </div>
-      <div>
-        <div class="flex items-center justify-center gap-4">
+      <div class="p-4 flex-1 items-center ml-4">
+        <div class="flex items-center gap-4">
           <img class="w-[30px] h-[30px]" src="/assets/icons/edit.png" alt="edit-icon">
-          <p class="font-bold text-[50px] font-[700]"> Freelance</p>
+          <p class="text-[36px] font-[700]"> Freelance</p>
         </div>
+        <div class="flex items-center gap-4">
+          <p class="text-[36px] font-[700]"> Services</p>
+          <p class="text-[36px] font-[400]"> Programs</p>
+        </div>
+        <p class="text-[16px] font-[400]"> Offer Your Services as a Freelance Expert </p>
+        <p class="text-[13px] font-[300]"> 
+          Turn your skills into a source of income by offering freelance services directly on our platform. Whether you’re a designer, developer, or creative professional, connect with clients looking for your expertise. We’ll handle the payments, ensuring a smooth transaction so you can focus on delivering great results. Join the Freelance Services Program and start earning by providing high-quality services.  
+        </p>
+        <button class="bg-black text-white mt-4 px-5 py-2 rounded-md gap-2 flex items-center"> Learn more!
+        <img class="h-[1] w-[1] size-6 text-white" src="/assets/icons/white-right-arrow.png" alt="right arrow">
+        </button>
       </div>
     </div>
     <!-- 6th example -->
-    <div class="grid grid-cols-2 sm:grid-cols-1 gap-4 mt-4">
+    <div class="grid grid-cols-2 sm:grid-cols-1 gap-4 mt-8">
       <div class="bg-gray-300 p-4">Column 1</div>
       <div class="bg-gray-300 p-4">Column 2</div>
     </div>

@@ -1,15 +1,15 @@
 <template>
     <div class="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
       <!-- Main Image -->
-      <img src="/assets/images/card1-img1.png" alt="Main Image" class="w-full h-64 object-cover">
+      <img src="/assets/images/cf1.png" alt="Main Image" class="w-full h-64 object-cover">
   
       <!-- Card Content -->
-      <div class="p-4">
+      <div class="p-2">
         <!-- Circular Profile Image -->
-        <div class="flex items-center justify-between mt-4">
-            <div class="flex items-center">
-            <img src="/assets/images/card1-img1.png" alt="Profile Image" class="w-8 h-8 rounded-full border-4 border-white shadow-lg">
-            <p class="text-center text-lg font-semibold">{{ 'username' }}</p>
+        <div class="flex items-center justify-between mt-2">
+            <div class="flex items-center gap-1">
+            <img src="/assets/images/user2.png" alt="Profile Image" class="w-10 h-10 rounded-full border-4 border-white shadow-lg">
+            <p class="text-center text-md font-semibold">{{ 'Ch. Ratana' }}</p>
         </div>
         <div class="flex items-center gap-2">
             <p class="text-center text-lg font-semibold line-through">{{ '$40' }}</p>
@@ -18,12 +18,18 @@
         </div>
   
         <!-- Title -->
-        <p class="mt-4 pl-2 text-xl font-bold">{{ 'title' }}</p>
+        <p class="mt-2 pl-2 text-xl font-bold">{{ 'Sala Blue' }}</p>
   
         <!-- Buttons -->
-        <div class="flex justify-around mt-6">
-          <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Button 1</button>
-          <button class="px-4 py-2 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400">Button 2</button>
+        <div class="flex justify-around mt-2">
+          <button class="flex items-center px-1.5 py-2 gap-2 bg-[#DBF226] text-black rounded-lg hover:bg-white hover:border-2 hover:border-gray-200">
+          <img class="h-5 w-5" src="/assets/icons/cart-black.png" alt="cart-black">
+          <p class="text-[14px] font-[350]">Add to cart</p>
+          </button>
+          <button class="flex items-center px-1.5 py-2 gap-2 bg-white text-black rounded-lg border-2 hover:bg-[#DBF226] border-gray-300">
+          <img class="h-4 w-4" src="/assets/icons/wishlist-outline.png" alt="cart-black">
+          <p class="text-[14px] font-[350]"> Wishlist </p>
+          </button>
         </div>
       </div>
     </div>
