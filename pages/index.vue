@@ -1,6 +1,6 @@
 <template>
   <div class="my-4">
-    <div class="bg-cover bg-no-repeat bg-[url('/assets/images/HERO.png')] h-[435px] w-full">
+    <div class="bg-cover bg-no-repeat bg-[url('/images/HERO.png')] h-[435px] w-full">
       <div class="flex-col justify-center max-w-screen-lg mx-auto px-4">
         <!-- Main Heading -->
         <p class="text-white font-bold text-[50px]">Discover, Download</p>
@@ -51,23 +51,23 @@
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mt-3 max-w-screen-xl mx-auto px-4">
-      <div class="bg-cover bg-no-repeat bg-[url('/assets/images/S1.png')] rounded-lg shadow-lg
+      <div class="bg-cover bg-no-repeat bg-[url('/images/S1.png')] rounded-lg shadow-lg
       flex items-center justify-center h-[58px] w-full">
         <p class="text-white text-base font-bold"> January 1</p>
       </div>
-      <div class="bg-cover bg-no-repeat bg-[url('/assets/images/S2.png')] rounded-lg shadow-lg
+      <div class="bg-cover bg-no-repeat bg-[url('/images/S2.png')] rounded-lg shadow-lg
       flex items-center justify-center h-[58px] w-full">
         <p class="text-white text-base font-bold"> January 7</p>
       </div>
-      <div class="bg-cover bg-no-repeat bg-[url('/assets/images/S3.png')] rounded-lg shadow-lg
+      <div class="bg-cover bg-no-repeat bg-[url('/images/S3.png')] rounded-lg shadow-lg
       flex items-center justify-center h-[58px] w-full">
         <p class="text-white text-base font-bold"> February 5 </p>
       </div>
-      <div class="bg-cover bg-no-repeat bg-[url('/assets/images/S4.png')] rounded-lg shadow-lg
+      <div class="bg-cover bg-no-repeat bg-[url('/images/S4.png')] rounded-lg shadow-lg
       flex items-center justify-center h-[58px] w-full">
         <p class="text-white text-base font-bold"> February 13</p>
       </div>
-      <div class="bg-cover bg-no-repeat bg-[url('/assets/images/S5.png')] rounded-lg shadow-lg
+      <div class="bg-cover bg-no-repeat bg-[url('/images/S5.png')] rounded-lg shadow-lg
       flex items-center justify-center h-[58px] w-full">
         <p class="text-white text-base font-bold"> February 15</p>
       </div>
@@ -181,34 +181,34 @@
     <!-- 5th example -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-10 gap-2">
       <div class="rounded-lg shadow-lg">
-        <img class="w-['210px'] h-['140']" src="../assets/images/sm-banner1.png" alt="s5" />
+        <img class="w-['210px'] h-['140']" src="/images/sm-banner1.png" alt="s1" />
       </div>
       <div class="rounded-lg shadow-lg">
-        <img class="w-['210px'] h-['140']" src="../assets/images/sm-banner2.png" alt="s5" />
+        <img class="w-['210px'] h-['140']" src="/images/sm-banner2.png" alt="s2" />
       </div>
       <div class="rounded-lg shadow-lg">
-        <img class="w-['210px'] h-['140']" src="../assets/images/sm-banner3.png" alt="s5" />
+        <img class="w-['210px'] h-['140']" src="/images/sm-banner3.png" alt="s3" />
       </div>
       <div class="rounded-lg shadow-lg">
-        <img class="w-['210px'] h-['140']" src="../assets/images/sm-banner4.png" alt="s5" />
+        <img class="w-['210px'] h-['140']" src="/images/sm-banner4.png" alt="s4" />
       </div>
       <div class="rounded-lg shadow-lg">
-        <img class="w-['210px'] h-['140']" src="../assets/images/sm-banner5.png" alt="s5" />
+        <img class="w-['210px'] h-['140']" src="/images/sm-banner5.png" alt="s5" />
       </div>
       <div class="rounded-lg shadow-lg">
-        <img class="w-['210px'] h-['140']" src="../assets/images/sm-banner6.png" alt="s5" />
+        <img class="w-['210px'] h-['140']" src="/images/sm-banner6.png" alt="s5" />
       </div>
       <div class="rounded-lg shadow-lg">
-        <img class="w-['210px'] h-['140']" src="../assets/images/sm-banner7.png" alt="s5" />
+        <img class="w-['210px'] h-['140']" src="/images/sm-banner7.png" alt="s7" />
       </div>
       <div class="rounded-lg shadow-lg">
-        <img class="w-['210px'] h-['140']" src="../assets/images/sm-banner8.png" alt="s5" />
+        <img class="w-['210px'] h-['140']" src="/images/sm-banner8.png" alt="s8" />
       </div>
       <div class="rounded-lg shadow-lg">
-        <img class="w-['210px'] h-['140']" src="../assets/images/sm-banner9.png" alt="s5" />
+        <img class="w-['210px'] h-['140']" src="/images/sm-banner9.png" alt="s9" />
       </div>
       <div class="rounded-lg shadow-lg">
-        <img class="w-['210px'] h-['140']" src="../assets/images/sm-banner10.png" alt="s5" />
+        <img class="w-['210px'] h-['140']" src="/images/sm-banner10.png" alt="s10" />
       </div>
     </div>
 
@@ -375,13 +375,13 @@
               <p class=""> Tax excluded. </p>
               <div class="flex gap-3">
                 <p class=""> Payment methods: </p>
-                <img class="w-[35px] h-[24px]:" src="/assets/images/Visa.png" alt="Visa">
-                <img class="w-[35px] h-[24px]:" src="/assets/images/Amex.png" alt="Amex">
-                <img class="w-[35px] h-[24px]:" src="/assets/images/Mastercard.png" alt="Mastercard">
-                <img class="w-[35px] h-[24px]:" src="/assets/images/UnionPay.png" alt="UnionPay">
-                <img class="w-[35px] h-[24px]:" src="/assets/images/PayPal.png" alt="Paypal">
-                <img class="w-[35px] h-[24px]:" src="/assets/images/GooglePay.png" alt="GooglePay">
-                <img class="w-[35px] h-[24px]:" src="/assets/images/ApplePay.png" alt="ApplePay">
+                <img class="w-[35px] h-[24px]:" src="/images/Visa.png" alt="Visa">
+                <img class="w-[35px] h-[24px]:" src="/images/Amex.png" alt="Amex">
+                <img class="w-[35px] h-[24px]:" src="/images/Mastercard.png" alt="Mastercard">
+                <img class="w-[35px] h-[24px]:" src="/images/UnionPay.png" alt="UnionPay">
+                <img class="w-[35px] h-[24px]:" src="/images/PayPal.png" alt="Paypal">
+                <img class="w-[35px] h-[24px]:" src="/images/GooglePay.png" alt="GooglePay">
+                <img class="w-[35px] h-[24px]:" src="/images/ApplePay.png" alt="ApplePay">
               </div>
             </div>
           </div>
@@ -398,7 +398,7 @@
     <!-- Freelance Service Programs -->
     <div class="flex flex-col md:flex-row max-w-screen-lg mx-auto px-4 mt-8">
       <div class=" flex flex-col md:flex-row w-[570px] h-[350px] bg-[#EFF1D9]">
-        <img src="/assets/images/freelance-img.png" alt="freelance-img">
+        <img src="/images/freelance-img.png" alt="freelance-img">
       </div>
       <div class="p-4 flex-1 items-center ml-4">
         <div class="flex items-center gap-4">
@@ -417,7 +417,7 @@
           Freelance Services Program and start earning by providing high-quality services.
         </p>
         <button class="bg-black text-white mt-4 px-5 py-2 rounded-md gap-2 flex items-center"> Learn more!
-          <img class="h-[1] w-[1] size-6 text-white" src="/assets/images/user-pro.png" alt="right arrow">
+          <img class="h-[1] w-[1] size-6 text-white" src="/assets/icons/white-right-arrow.png" alt="right arrow">
         </button>
       </div>
     </div>
