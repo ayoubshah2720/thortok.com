@@ -5,7 +5,8 @@ export default defineNuxtConfig({
   css: ['@/assets/css/tailwind.css'],
   modules: [
     'tailwindcss',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@primevue/nuxt-module'
   ],
   alias:{
     assets: "/<rootDir>/assets"

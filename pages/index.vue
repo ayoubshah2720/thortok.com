@@ -253,87 +253,60 @@
           have a plan for you.
         </p>
       </div>
-      <div class="flex flex-col md:flex-row mt-4">
-        <div class="rounded-md shadow-lg border-2 p-10  w-[455px]">
-          <h2 class="text-xl p-1 font-bold">Free Plan</h2>
-          <p class="text-base font-light p-1">
-            Join Thortok today with our free plan and enjoy access to a curated
-            selection of design assets, templates, and photos.
-          </p>
-          <button class="rounded-md bg-[#DBF226] px-10 py-4">
-            Get started for Free!
-          </button>
-          <p class="font-[700] text-[17px] p-2">No commitment required:</p>
-          <div class="space-y-4">
-            <div class="flex items-center gap-3">
-              <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
-                <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
-              </div>
-              <p class="text-[14px]"><b>10 items</b> downloaded per day</p>
-            </div>
-            <div class="flex items-center gap-3">
-              <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
-                <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
-              </div>
-              <p class="text-[14px]">
-                <b>Create and save</b> to a favorites list
-              </p>
-            </div>
-            <div class="flex items-center gap-3">
-              <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
-                <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
-              </div>
-              <p class="text-[14px]">
-                <b>Consult download history</b> with licenses
-              </p>
-            </div>
-            <div class="flex items-center gap-3">
-              <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
-                <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
-              </div>
-              <p class="text-[14px]"><b>Follow talent</b> on the platform</p>
-            </div>
-            <div class="flex items-center gap-3">
-              <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
-                <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
-              </div>
-              <p class="text-[14px]">
-                <b>Earn money</b> with the affiliate program
-              </p>
-            </div>
-          </div>
-          <p class="text-green-600 text-[18px] font-[400]">
-            Sign up and take advantage of all these benefits to boost your
-            creativity!
-          </p>
+    
+      <div class="flex flex-col md:flex-row mt-4 gap-4">
+  <!-- Free Plan -->
+  <div class="flex-1 md:basis-1/3 rounded-md shadow-lg border-2 p-10">
+    <h2 class="text-xl p-1 font-bold">Free Plan</h2>
+    <p class="text-base font-light p-1">
+      Join Thortok today with our free plan and enjoy access to a curated
+      selection of design assets, templates, and photos.
+    </p>
+    <button class="rounded-md bg-[#DBF226] px-10 py-4">
+      Get started for Free!
+    </button>
+    <p class="font-[700] text-[17px] p-2">No commitment required:</p>
+    <div class="space-y-4">
+      <!-- Features -->
+      <div class="flex items-center gap-3">
+        <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
+          <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
         </div>
-        <div class="rounded-md shadow-lg border-2">
-          <div class="rounded-md p-10">
-            <h2 class="text-xl p-1 font-bold">Pro Plan</h2>
-            <div class="flex">
-              <div class="w-[350px] h-[155px]">
-                <p class="text-base font-[300] text-[17px] p-1 h-[155px]">
-                  Take your projects to the next level with Thortok’s Pro Plan.
-                  Get unlimited downloads, access to premium design assets,
-                  exclusive templates, and priority support. Unlock all the
-                  tools you need to bring your creative ideas to life
-                </p>
-                <div class="text-center">
-                  <p class="text-base font-[400] text-[18px]">Monthly Plan</p>
-                  <div class="flex items-center justify-center">
-                    <p class="font-[400] text-[14px] mt-3 mr-1">USD $</p>
-                    <p class="font-[500] text-[40px]">2.99</p>
-                    <p class="font-[400] text-[14px] mt-3 ml-1">/month</p>
-                  </div>
-                  <button class="rounded-md bg-black text-white w-[250px] h-[50px] font-[400] text-[18px]">
-                    Get monthly
-                  </button>
-                </div>
-              </div>
-              <div class="w-[350px] h-[155px]">
-                <div>
-                  <p class="font-[700] text-[14px] p-2">Pro Plan includes:</p>
-                  <div class="space-y-1">
+        <p class="text-[14px]"><b>10 items</b> downloaded per day</p>
+      </div>
+      <!-- Additional features... -->
+    </div>
+    <p class="text-green-600 text-[18px] font-[400]">
+      Sign up and take advantage of all these benefits to boost your
+      creativity!
+    </p>
+  </div>
+
+  <!-- Pro Plan -->
+  <div class="flex-2 md:basis-2/3 rounded-md shadow-lg border-2 p-10">
+    <h2 class="text-xl p-1 font-bold">Pro Plan</h2>
+    <div class="flex flex-col md:flex-row gap-4 mt-6">
+  <!-- Left Section -->
+  <div class="flex-1 flex flex-col gap-4">
+    <p class="text-base font-light p-1">
+      Take your projects to the next level with Thortok’s Pro Plan. Get unlimited downloads, access to premium design assets, exclusive templates, and priority support.
+    </p>
+    <!-- Monthly Plan -->
+    <div class="rounded-md border shadow-md p-6">
+      <h3 class="text-lg font-bold text-center">Monthly Plan</h3>
+      <div class="text-center mt-4">
+        <p class="font-light text-[18px]">USD $<span class="text-[40px] font-semibold">2.99</span>/month</p>
+        <button class="mt-4 bg-black text-white px-8 py-2 rounded-md">Get Monthly</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Section -->
+  <div class="flex-1 flex flex-col gap-4">
+    <div>
+      <!-- Features -->
+      <p class="font-[700] text-[14px] p-2">Pro Plan includes:</p>
+                  <div class="space-y-1 mt-2">
                     <div class="flex items-center gap-3">
                       <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
                         <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
@@ -356,37 +329,43 @@
                         Commercial license included
                       </p>
                     </div>
-                  </div>
-                  <div class="text-center mt-10">
-                    <p class="text-base font-[400] text-[18px]">Monthly Plan</p>
-                    <div class="flex items-center justify-center">
-                      <p class="font-[400] text-[14px] mt-3 mr-1">USD $</p>
-                      <p class="font-[500] text-[40px]">2.99</p>
-                      <p class="font-[400] text-[14px] mt-3 ml-1">/month</p>
                     </div>
-                    <button class="rounded-md bg-black text-white w-[250px] h-[50px] font-[400] text-[18px]">
-                      Get monthly
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="text-center">
-              <p class=""> Tax excluded. </p>
-              <div class="flex gap-3">
-                <p class=""> Payment methods: </p>
-                <img class="w-[35px] h-[24px]:" src="/images/Visa.png" alt="Visa">
-                <img class="w-[35px] h-[24px]:" src="/images/Amex.png" alt="Amex">
-                <img class="w-[35px] h-[24px]:" src="/images/Mastercard.png" alt="Mastercard">
-                <img class="w-[35px] h-[24px]:" src="/images/UnionPay.png" alt="UnionPay">
-                <img class="w-[35px] h-[24px]:" src="/images/PayPal.png" alt="Paypal">
-                <img class="w-[35px] h-[24px]:" src="/images/GooglePay.png" alt="GooglePay">
-                <img class="w-[35px] h-[24px]:" src="/images/ApplePay.png" alt="ApplePay">
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- Additional Features -->
+    </div>
+
+    <!-- Yearly Plan -->
+    <div class="rounded-md border shadow-md p-4 mt-1">
+      <h3 class="text-lg font-bold text-center">Yearly Plan</h3>
+      <div class="flex justify-between">
+        <p></p>
+        <p class="p-1 rounded-md bg-[#DBF226] text-right text-[14px]"> 2 months free </p>
       </div>
+      <div class="text-center">
+        <p class="font-light text-[18px]">USD $<span class="text-[40px] font-semibold">35.88</span>/year</p>
+        <button class="mt-3 mb-1 bg-black text-white px-10 py-2 rounded-md">Get Yearly</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="text-center mt-6">
+      <p class="text-black">Tax excluded.</p>
+      <div class="flex justify-center items-center gap-2 mt-2">
+        <p class=""> Payment methods: </p>
+          <img class="w-[35px] h-[24px]:" src="/images/Visa.png" alt="Visa">
+          <img class="w-[35px] h-[24px]:" src="/images/Amex.png" alt="Amex">
+          <img class="w-[35px] h-[24px]:" src="/images/Mastercard.png" alt="Mastercard">
+          <img class="w-[35px] h-[24px]:" src="/images/UnionPay.png" alt="UnionPay">
+          <img class="w-[35px] h-[24px]:" src="/images/PayPal.png" alt="Paypal">
+          <img class="w-[35px] h-[24px]:" src="/images/GooglePay.png" alt="GooglePay">
+          <img class="w-[35px] h-[24px]:" src="/images/ApplePay.png" alt="ApplePay">
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
 
 
@@ -397,9 +376,14 @@
 
     <!-- Freelance Service Programs -->
     <div class="flex flex-col md:flex-row max-w-screen-lg mx-auto px-4 mt-8">
-      <div class=" flex flex-col md:flex-row w-[570px] h-[350px] bg-[#EFF1D9]">
-        <img src="/images/freelance-img.png" alt="freelance-img">
+      <div class="w-[570px] h-[350px] max-w-full max-h-[350px] bg-[#EFF1D9] md:w-full md:h-auto">
+      <img 
+        src="/images/freelance-img.png" 
+        alt="freelance-img" 
+        class="w-full h-full object-cover md:object-contain"
+      >
       </div>
+
       <div class="p-4 flex-1 items-center ml-4">
         <div class="flex items-center gap-4">
           <img class="w-[30px] h-[30px]" src="/assets/icons/edit.png" alt="edit-icon">
@@ -422,15 +406,39 @@
       </div>
     </div>
     <!-- 6th example -->
-    <div class="grid grid-cols-2 sm:grid-cols-1 gap-4 mt-8">
-      <div class="bg-gray-300 p-4">Column 1</div>
-      <div class="bg-gray-300 p-4">Column 2</div>
+    <div class="max-w-screen-lg mx-auto px-4 mt-8">
+      <div>
+        <p class="text-[36px] font-[700]">
+          Quick Answers
+        </p>
+        <p class="text-[36px] font-[700]">
+          to Your Questions
+        </p>
+      </div>
+    
+      <div class="flex flex-col md:flex-row mt-4 gap-4">
+  <!-- About Thortok -->
+  <div class="flex-1 md:basis-1/5 rounded-md  p-2">
+    <P class="bg-[#005B52] text-center text-white py-3 rounded-md">About Thortok</P>
+    <P class="text-black px-4 py-3 ">Monetization Programs</P>
+    <P class="text-black px-4 py-3 ">Participation and Content Creation</P>
+    <P class="text-black px-4 py-3 ">Account and Settings</P>
+    <P class="text-black px-4 py-3 ">Support and Reporting</P>
+  </div>
+
+  <!-- What is thortok + FAQ-->
+  <div class="flex-3 md:basis-4/5 rounded-md p-2">
+    <Faq />
+  </div>
+</div>
+
     </div>
   </div>
 </template>
 
 <script setup>
 import OffersCards from "~/components/offersCards.vue";
+import Faq from "./faq.vue";
 
 const cardsData = [
   {
