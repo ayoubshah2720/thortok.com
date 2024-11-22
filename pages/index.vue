@@ -27,7 +27,8 @@
         <p class="text-white text-[10px]">Unleash your creativity with thousands of high-quality</p>
         <p class="p-1 bg-gray-400 text-white text-[10px] rounded-sm"> design assets, </p>
         <p class="text-white text-[10px]"> audio, photos, Videos and templates. </p>
-        <p class="text-white text-[10px]"> Whether you’re a creator or a designer, find everything you need to bring </p>
+        <p class="text-white text-[10px]"> Whether you’re a creator or a designer, find everything you need to bring
+        </p>
         <p class="p-1 bg-gray-400 text-white text-[10px] rounded-sm"> your ideas to life. </p>
       </div>
 
@@ -112,8 +113,8 @@
       </div>
       <div
         class="flex flex-col md:flex-row mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-screen-xl mx-auto px-4">
-        <div class="flex-1 rounded-lg" v-for="(card, index) in featureCards">
-          <OffersCards :key="index" :card="card"/>
+        <div class="flex-1 rounded-lg" v-for="(card, index) in offersCards">
+          <OffersCards :key="index" :card="card" />
         </div>
       </div>
     </div>
@@ -234,9 +235,9 @@
         </div>
       </div>
       <div
-        class="flex flex-col md:flex-row mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-screen-xl mx-auto px-4">
+        class="flex flex-col md:flex-row mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 max-w-screen-2xl mx-auto px-4">
         <div class="flex-1 rounded-lg" v-for="(card, index) in featureCards">
-          <OffersCards :key="index" :card="card"/>
+          <FeatureCard :key="index" :card="card" />
         </div>
       </div>
     </div>
@@ -253,118 +254,143 @@
           have a plan for you.
         </p>
       </div>
-    
+
       <div class="flex flex-col md:flex-row mt-4 gap-4">
-  <!-- Free Plan -->
-  <div class="flex-1 md:basis-1/3 rounded-md shadow-lg border-2 p-10">
-    <h2 class="text-xl p-1 font-bold">Free Plan</h2>
-    <p class="text-base font-light p-1">
-      Join Thortok today with our free plan and enjoy access to a curated
-      selection of design assets, templates, and photos.
-    </p>
-    <button class="rounded-md bg-[#DBF226] px-10 py-4">
-      Get started for Free!
-    </button>
-    <p class="font-[700] text-[17px] p-2">No commitment required:</p>
-    <div class="space-y-4">
-      <!-- Features -->
-      <div class="flex items-center gap-3">
-        <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
-          <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
+        <!-- Free Plan -->
+        <div class="flex-1 md:basis-1/3 rounded-md shadow-lg border-2 py-10 px-8">
+          <h2 class="text-xl p-1 font-bold">Free Plan</h2>
+          <p class="text-base font-light p-1">
+            Join Thortok today with our free plan and enjoy access to a curated
+            selection of design assets, templates, and photos.
+          </p>
+          <button class="rounded-md bg-[#DBF226] px-10 py-4">
+            Get started for Free!
+          </button>
+          <p class="font-[700] text-[17px] p-2">No commitment required:</p>
+          <div class="space-y-2">
+            <!-- Features -->
+            <div class="flex items-center gap-3">
+              <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
+                <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
+              </div>
+              <p class="text-[12px]"><b>10 items</b> downloaded per day</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
+                <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
+              </div>
+              <p class="text-[12px]"><b>Create and save </b> to a favorites list</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
+                <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
+              </div>
+              <p class="text-[12px]"><b>Consult download history </b> with licenses</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
+                <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
+              </div>
+              <p class="text-[12px]"><b>Follow talent </b> on the platform</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
+                <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
+              </div>
+              <p class="text-[12px]"><b>Earn money </b> with the affiliate program</p>
+            </div>
+            <!-- Additional features... -->
+          </div>
+          <p class="text-green-600 text-[14px] font-[400] mt-5">
+            Sign up and take advantage of all these benefits to boost your
+            creativity!
+          </p>
         </div>
-        <p class="text-[14px]"><b>10 items</b> downloaded per day</p>
-      </div>
-      <!-- Additional features... -->
-    </div>
-    <p class="text-green-600 text-[18px] font-[400]">
-      Sign up and take advantage of all these benefits to boost your
-      creativity!
-    </p>
-  </div>
 
-  <!-- Pro Plan -->
-  <div class="flex-2 md:basis-2/3 rounded-md shadow-lg border-2 p-10">
-    <h2 class="text-xl p-1 font-bold">Pro Plan</h2>
-    <div class="flex flex-col md:flex-row gap-4 mt-6">
-  <!-- Left Section -->
-  <div class="flex-1 flex flex-col gap-4">
-    <p class="text-base font-light p-1">
-      Take your projects to the next level with Thortok’s Pro Plan. Get unlimited downloads, access to premium design assets, exclusive templates, and priority support.
-    </p>
-    <!-- Monthly Plan -->
-    <div class="rounded-md border shadow-md p-6">
-      <h3 class="text-lg font-bold text-center">Monthly Plan</h3>
-      <div class="text-center mt-4">
-        <p class="font-light text-[18px]">USD $<span class="text-[40px] font-semibold">2.99</span>/month</p>
-        <button class="mt-4 bg-black text-white px-8 py-2 rounded-md">Get Monthly</button>
-      </div>
-    </div>
-  </div>
+        <!-- Pro Plan -->
+        <div class="flex-2 md:basis-2/3 rounded-md shadow-lg border-2 p-10">
+          <h2 class="text-xl p-1 font-bold">Pro Plan</h2>
+          <div class="flex flex-col md:flex-row gap-4 mt-6">
+            <!-- Left Section -->
+            <div class="flex-1 flex flex-col gap-4">
+              <p class="text-base font-light p-1">
+                Take your projects to the next level with Thortok’s Pro Plan. Get unlimited downloads, access to premium
+                design assets, exclusive templates, and priority support.
+              </p>
+              <!-- Monthly Plan -->
+              <div class="rounded-md border shadow-md p-6">
+                <h3 class="text-lg font-bold text-center">Monthly Plan</h3>
+                <div class="text-center mt-4">
+                  <p class="font-light text-[18px]">USD $<span class="text-[40px] font-semibold">2.99</span>/month</p>
+                  <button class="mt-4 bg-black text-white px-8 py-2 rounded-md">Get Monthly</button>
+                </div>
+              </div>
+            </div>
 
-  <!-- Right Section -->
-  <div class="flex-1 flex flex-col gap-4">
-    <div>
-      <!-- Features -->
-      <p class="font-[700] text-[14px] p-2">Pro Plan includes:</p>
-                  <div class="space-y-1 mt-2">
-                    <div class="flex items-center gap-3">
-                      <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
-                        <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
-                      </div>
-                      <p class="text-[14px] font-bold">Unlimited downloads</p>
+            <!-- Right Section -->
+            <div class="flex-1 flex flex-col gap-4">
+              <div>
+                <!-- Features -->
+                <p class="font-[700] text-[14px] p-2">Pro Plan includes:</p>
+                <div class="space-y-1 mt-2">
+                  <div class="flex items-center gap-3">
+                    <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
+                      <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
                     </div>
-                    <div class="flex items-center gap-3">
-                      <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
-                        <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
-                      </div>
-                      <p class="text-[14px] font-bold">
-                        Priority access to support
-                      </p>
+                    <p class="text-[14px] font-bold">Unlimited downloads</p>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
+                      <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
                     </div>
-                    <div class="flex items-center gap-3">
-                      <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
-                        <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
-                      </div>
-                      <p class="text-[14px] font-bold">
-                        Commercial license included
-                      </p>
+                    <p class="text-[14px] font-bold">
+                      Priority access to support
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
+                      <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
                     </div>
-                    </div>
-      <!-- Additional Features -->
-    </div>
+                    <p class="text-[14px] font-bold">
+                      Commercial license included
+                    </p>
+                  </div>
+                </div>
+                <!-- Additional Features -->
+              </div>
 
-    <!-- Yearly Plan -->
-    <div class="rounded-md border shadow-md p-4 mt-1">
-      <h3 class="text-lg font-bold text-center">Yearly Plan</h3>
-      <div class="flex justify-between">
-        <p></p>
-        <p class="p-1 rounded-md bg-[#DBF226] text-right text-[14px]"> 2 months free </p>
+              <!-- Yearly Plan -->
+              <div class="rounded-md border shadow-md p-4 mt-1">
+                <h3 class="text-lg font-bold text-center">Yearly Plan</h3>
+                <div class="flex justify-between">
+                  <p></p>
+                  <p class="p-1 rounded-md bg-[#DBF226] text-right text-[14px]"> 2 months free </p>
+                </div>
+                <div class="text-center">
+                  <p class="font-light text-[18px]">USD $<span class="text-[40px] font-semibold">35.88</span>/year</p>
+                  <button class="mt-3 mb-1 bg-black text-white px-10 py-2 rounded-md">Get Yearly</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="text-center mt-6">
+            <p class="text-black">Tax excluded.</p>
+            <div class="flex justify-center items-center gap-2 mt-2">
+              <p class=""> Payment methods: </p>
+              <img class="w-[35px] h-[24px]:" src="/images/Visa.png" alt="Visa">
+              <img class="w-[35px] h-[24px]:" src="/images/Amex.png" alt="Amex">
+              <img class="w-[35px] h-[24px]:" src="/images/Mastercard.png" alt="Mastercard">
+              <img class="w-[35px] h-[24px]:" src="/images/UnionPay.png" alt="UnionPay">
+              <img class="w-[35px] h-[24px]:" src="/images/PayPal.png" alt="Paypal">
+              <img class="w-[35px] h-[24px]:" src="/images/GooglePay.png" alt="GooglePay">
+              <img class="w-[35px] h-[24px]:" src="/images/ApplePay.png" alt="ApplePay">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="text-center">
-        <p class="font-light text-[18px]">USD $<span class="text-[40px] font-semibold">35.88</span>/year</p>
-        <button class="mt-3 mb-1 bg-black text-white px-10 py-2 rounded-md">Get Yearly</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-    <div class="text-center mt-6">
-      <p class="text-black">Tax excluded.</p>
-      <div class="flex justify-center items-center gap-2 mt-2">
-        <p class=""> Payment methods: </p>
-          <img class="w-[35px] h-[24px]:" src="/images/Visa.png" alt="Visa">
-          <img class="w-[35px] h-[24px]:" src="/images/Amex.png" alt="Amex">
-          <img class="w-[35px] h-[24px]:" src="/images/Mastercard.png" alt="Mastercard">
-          <img class="w-[35px] h-[24px]:" src="/images/UnionPay.png" alt="UnionPay">
-          <img class="w-[35px] h-[24px]:" src="/images/PayPal.png" alt="Paypal">
-          <img class="w-[35px] h-[24px]:" src="/images/GooglePay.png" alt="GooglePay">
-          <img class="w-[35px] h-[24px]:" src="/images/ApplePay.png" alt="ApplePay">
-      </div>
-    </div>
-  </div>
-</div>
 
     </div>
 
@@ -377,11 +403,7 @@
     <!-- Freelance Service Programs -->
     <div class="flex flex-col md:flex-row max-w-screen-lg mx-auto px-4 mt-8">
       <div class="w-[570px] h-[350px] max-w-full max-h-[350px] bg-[#EFF1D9] md:w-full md:h-auto">
-      <img 
-        src="/images/freelance-img.png" 
-        alt="freelance-img" 
-        class="w-full h-full object-cover md:object-contain"
-      >
+        <img src="/images/freelance-img.png" alt="freelance-img" class="w-full h-full object-cover md:object-contain">
       </div>
 
       <div class="p-4 flex-1 items-center ml-4">
@@ -415,22 +437,22 @@
           to Your Questions
         </p>
       </div>
-    
-      <div class="flex flex-col md:flex-row mt-4 gap-4">
-  <!-- About Thortok -->
-  <div class="flex-1 md:basis-1/5 rounded-md  p-2">
-    <P class="bg-[#005B52] text-center text-white py-3 rounded-md">About Thortok</P>
-    <P class="text-black px-4 py-3 ">Monetization Programs</P>
-    <P class="text-black px-4 py-3 ">Participation and Content Creation</P>
-    <P class="text-black px-4 py-3 ">Account and Settings</P>
-    <P class="text-black px-4 py-3 ">Support and Reporting</P>
-  </div>
 
-  <!-- What is thortok + FAQ-->
-  <div class="flex-3 md:basis-4/5 rounded-md p-2">
-    <Faq />
-  </div>
-</div>
+      <div class="flex flex-col md:flex-row mt-4 gap-4">
+        <!-- About Thortok -->
+        <div class="flex-1 md:basis-1/5 rounded-md  p-2">
+          <P class="bg-[#005B52] text-center text-white py-2 rounded-md">About Thortok</P>
+          <P class="bg-[#EFF1D9] text-black px-4 py-2 mt-1 rounded-md">Monetization Programs</P>
+          <P class="text-black px-4 py-2 mt-1 rounded-md">Participation and Content Creation</P>
+          <P class="text-black px-4 py-2 mt-1 rounded-md">Account and Settings</P>
+          <P class="text-black px-4 py-2 mt-1 rounded-md">Support and Reporting</P>
+        </div>
+
+        <!-- What is thortok + FAQ-->
+        <div class="flex-3 md:basis-4/5 rounded-md p-2">
+          <Faq />
+        </div>
+      </div>
 
     </div>
   </div>
@@ -438,7 +460,7 @@
 
 <script setup>
 import OffersCards from "~/components/offersCards.vue";
-import Faq from "./faq.vue";
+import Faq from "../components/faq.vue";
 
 const cardsData = [
   {
@@ -460,11 +482,13 @@ const cardsData = [
     img3: "/images/card2-img3.png",
     title: "Graphics",
     tags: [
-      { id: 1, name: "Icons" },
-      { id: 2, name: "PSD" },
-      { id: 3, name: "Vectors" },
-      { id: 4, name: "Templates" },
-      { id: 5, name: "Mockups" },
+      { id: 1, name: "Culture & Tradition" },
+      { id: 2, name: "Products" },
+      { id: 3, name: "Food & Beverages" },
+      { id: 4, name: "Peoples" },
+      { id: 5, name: "Animals" },
+      { id: 6, name: "Lifestyle" },
+      { id: 7, name: "Nature & Place" },
     ],
   },
   {
@@ -473,11 +497,13 @@ const cardsData = [
     img3: "/images/card3-img3.png",
     title: "Graphics",
     tags: [
-      { id: 1, name: "Icons" },
-      { id: 2, name: "PSD" },
-      { id: 3, name: "Vectors" },
-      { id: 4, name: "Templates" },
-      { id: 5, name: "Mockups" },
+      { id: 1, name: "Culture & Tradition" },
+      { id: 2, name: "Products" },
+      { id: 3, name: "Food & Beverages" },
+      { id: 4, name: "Peoples" },
+      { id: 5, name: "Animals" },
+      { id: 6, name: "Lifestyle" },
+      { id: 7, name: "Nature & Place" },
     ],
   },
   {
@@ -486,11 +512,9 @@ const cardsData = [
     img3: "/images/card4-img3.png",
     title: "Graphics",
     tags: [
-      { id: 1, name: "Icons" },
-      { id: 2, name: "PSD" },
-      { id: 3, name: "Vectors" },
-      { id: 4, name: "Templates" },
-      { id: 5, name: "Mockups" },
+      { id: 1, name: "Genres" },
+      { id: 2, name: "Moods" },
+      { id: 3, name: "Themes" },
     ],
   },
   {
@@ -499,78 +523,163 @@ const cardsData = [
     img3: "/images/card5-img3.png",
     title: "Graphics",
     tags: [
-      { id: 1, name: "Icons" },
-      { id: 2, name: "PSD" },
-      { id: 3, name: "Vectors" },
-      { id: 4, name: "Templates" },
-      { id: 5, name: "Mockups" },
+      { id: 1, name: "Genres" },
+      { id: 2, name: "Moods" },
+      { id: 3, name: "Themes" },
     ],
   },
   {
-    img1:'/images/card6-img1.png',
-    img2:'/images/card6-img2.png',
-    img3:'/images/card6-img3.png',
-    title:'Graphics',
-    tags:[
-      {id:1, name:'Icons'},
-      {id:2, name:'PSD'},
-      {id:3, name:'Vectors'},
-      {id:4, name:'Templates'},
-      {id:5, name:'Mockups'},
+    img1: '/images/card6-img1.png',
+    img2: '/images/card6-img2.png',
+    img3: '/images/card6-img3.png',
+    title: 'Graphics',
+    tags: [
+      { id: 1, name: 'Culture & Tradition' },
+      { id: 2, name: 'Products' },
+      { id: 3, name: 'Food & Beverages' },
+      { id: 4, name: 'Peoples' },
+      { id: 5, name: 'Animals' },
+      { id: 6, name: 'Lifestyle' },
+      { id: 7, name: 'Nature & Place' },
     ]
   },
 ];
-const featureCards=[
+// Offers Cards
+const offersCards = [
   {
-    username:'Ch. Ratana',
-    userimage:'/images/user-pro.png',
-    cardimage:'/images/cf1.png',
-    title:'Sala Blue',
-    price:30,
-    dicountedPrice:25
+    username: 'Ch. Ratana',
+    userimage: '/images/user-pro.png',
+    cardimage: '/images/cf1.png',
+    title: 'Sala Blue',
+    price: 30,
+    dicountedPrice: 25
   },
   {
-    username:'K. Net',
-    userimage:'/images/user2.png',
-    cardimage:'/images/cf2.png',
-    title:'Organic Orange',
-    price:40,
-    dicountedPrice:35
+    username: 'K. Net',
+    userimage: '/images/user2.png',
+    cardimage: '/images/cf2.png',
+    title: 'Organic Orange',
+    price: 40,
+    dicountedPrice: 35
   },
   {
-    username:'Na. Rith',
-    userimage:'/images/user3.png',
-    cardimage:'/images/cf3.png',
-    title:'Geo Art',
-    price:45,
-    dicountedPrice:40
+    username: 'Na. Rith',
+    userimage: '/images/user3.png',
+    cardimage: '/images/cf3.png',
+    title: 'Geo Art',
+    price: 45,
+    dicountedPrice: 40
   },
   {
-    username:'L. Sreyka',
-    userimage:'/images/user4.png',
-    cardimage:'/images/cf4.png',
-    title:'Passion Crea',
-    price:35,
-    dicountedPrice:25
+    username: 'L. Sreyka',
+    userimage: '/images/user4.png',
+    cardimage: '/images/cf4.png',
+    title: 'Passion Crea',
+    price: 35,
+    dicountedPrice: 25
   },
   {
-    username:'Ch. Ratana',
-    userimage:'/images/user-pro.png',
-    cardimage:'/images/cf1.png',
-    title:'Sala Blue',
-    price:40,
-    dicountedPrice:35
+    username: 'Ch. Ratana',
+    userimage: '/images/user-pro.png',
+    cardimage: '/images/cf1.png',
+    title: 'Sala Blue',
+    price: 40,
+    dicountedPrice: 35
   }
 ]
+
+// Feature Cards
+const featureCards = [
+  {
+    username: 'K. Net',
+    userimage: '/images/user-pro.png',
+    cardimage: '/images/fc1.png',
+    title: 'Sala Blue',
+    btnTitle: 'Follow',
+    tags: [
+      { id: 1, name: 'Graphics' },
+      { id: 2, name: 'PSD' },
+      { id: 3, name: 'Templates' },
+      { id: 4, name: 'Mockups' },
+      { id: 5, name: 'Marketing' },
+    ]
+  },
+  {
+    username: 'Ch. Ratana',
+    userimage: '/images/user2.png',
+    cardimage: '/images/fc2.png',
+    title: 'Organic Orange',
+    btnTitle: 'Unfollow',
+    tags: [
+      { id: 1, name: 'Graphics' },
+      { id: 2, name: 'PSD' },
+      { id: 3, name: 'Templates' },
+      { id: 4, name: 'Mockups' },
+      { id: 5, name: 'Marketing' },
+    ]
+  },
+  {
+    username: 'K. Net',
+    userimage: '/images/user3.png',
+    cardimage: '/images/fc3.png',
+    title: 'Geo Art',
+    btnTitle: 'Follow',
+    tags: [
+      { id: 1, name: 'Graphics' },
+      { id: 2, name: 'Vectors' },
+      { id: 3, name: 'Drawings' },
+      { id: 4, name: 'Logo' },
+      { id: 5, name: 'Mockups' },
+    ]
+  },
+  {
+    username: 'Na. Rith',
+    userimage: '/images/user4.png',
+    cardimage: '/images/fc4.png',
+    title: 'Passion Crea',
+    btnTitle: 'Follow',
+    tags: [
+      { id: 1, name: 'Graphics' },
+      { id: 2, name: 'Illustrations' },
+      { id: 3, name: 'Cartoons' },
+      { id: 4, name: 'Social Media' },
+    ]
+  },
+  {
+    username: 'L. Sreyka',
+    userimage: '/images/user-pro.png',
+    cardimage: '/images/fc5.png',
+    title: 'Sala Blue',
+    btnTitle: 'Follow',
+    tags: [
+      { id: 1, name: 'Graphics' },
+      { id: 2, name: 'Illustrations' },
+      { id: 3, name: 'Cartoons' },
+      { id: 4, name: 'Social Media' },
+    ]
+  },
+  {
+    username: 'Ch. Ratana',
+    userimage: '/images/user2.png',
+    cardimage: '/images/fc6.png',
+    title: 'Sala Blue',
+    btnTitle: 'Follow',
+    tags: [
+      { id: 1, name: 'Graphics' },
+      { id: 2, name: 'PSD' },
+      { id: 3, name: 'Templates' },
+      { id: 4, name: 'Mockups' },
+      { id: 5, name: 'Marketing' },
+    ]
+  }
+]
+
 </script>
 
 <style scoped>
 .custom-underline {
   display: inline-block;
-  /* Make the element inline-block so the border can apply to it */
   border-bottom: 1px solid #000;
-  /* Apply the underline */
   padding-bottom: 8px;
-  /* Add some space between the text and the underline */
 }
 </style>

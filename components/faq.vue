@@ -1,26 +1,20 @@
 <template>
   <div class="accordion">
-    <div 
-      v-for="(item, index) in items" 
-      :key="index" 
-      class="accordion-item"
-    >
+    <div v-for="(item, index) in items" :key="index" class="accordion-item">
       <!-- Accordion Header -->
       <div
         class="accordion-header flex justify-between items-center cursor-pointer py-2 px-6  hover:bg-[#EFF1D9] rounded-md"
-        @click="toggleAccordion(index)"
-      >
-        <h3 class="font-bold text-[#005B52]">{{ item.title }}</h3>
+        @click="toggleAccordion(index)">
+        <h3 :class="['font-bold', openIndex === index ? 'text-[#005B52]' : 'text-black']">
+          {{ item.title }}
+        </h3>
         <span class="text-3xl">
           {{ openIndex === index ? '-' : '+' }}
         </span>
       </div>
 
       <!-- Accordion Content -->
-      <div
-        v-if="openIndex === index"
-        class="accordion-content px-6 py-2 bg-white rounded-md mt-2"
-      >
+      <div v-if="openIndex === index" class="accordion-content px-6 py-2 bg-white rounded-md mt-2">
         <p>{{ item.content }}</p>
       </div>
     </div>
@@ -83,6 +77,7 @@ const toggleAccordion = (index) => {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
