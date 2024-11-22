@@ -52,7 +52,7 @@
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mt-3 max-w-screen-xl mx-auto px-4">
-      <div class="bg-cover bg-no-repeat bg-[url('/images/S1.png')] rounded-lg shadow-lg
+      <div class="bg-cover bg-no-repeat bg-[url('/images/S5.png')] rounded-lg shadow-lg
       flex items-center justify-center h-[58px] w-full">
         <p class="text-white text-base font-bold"> January 1</p>
       </div>
