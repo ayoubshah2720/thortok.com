@@ -1,13 +1,13 @@
 <template>
-  <div class="my-4">
-    <div class="bg-cover bg-no-repeat bg-[url('/images/HERO.png')] h-[435px] w-full">
-      <div class="flex-col justify-center max-w-screen-lg mx-auto px-4">
+  <div class="">
+    <div class="bg-cover bg-no-repeat bg-[url('/images/HERO.png')] w-full xl:py-8 md:py-5 ">
+      <div class="flex-col items-center justify-center xl:max-w-screen-xl mx-auto px-4">
         <!-- Main Heading -->
-        <p class="text-white font-bold text-[50px]">Discover, Download</p>
+        <p class="text-white font-bold text-[50px]">Discover, Download,</p>
         <p class="text-white font-bold text-[50px] mb-4">Create!</p>
 
         <!-- Search Container -->
-        <div class="bg-white flex flex-wrap gap-1 px-2 w-full max-w-4xl rounded-lg shadow-lg">
+        <div class="bg-white flex flex-wrap gap-1 px-2 w-full xl:max-w-screen-xl rounded-lg shadow-lg">
           <!-- Collection Dropdown -->
           <div class="w-full sm:w-[200px] flex items-center gap-2 justify-around px-3 py-2 rounded-md">
             <img class="h-6 w-6" src="/assets/icons/collection.png" alt="Collection Icon">
@@ -22,19 +22,19 @@
             <button class="bg-[#005B52] text-white px-4 py-2 rounded-md hover:bg-[#004844]">Search</button>
           </div>
         </div>
+        <div class="flex max-w-screen-lg items-center mx-auto py-4 gap-2">
+          <p class="text-white text-[10px]">Unleash your creativity with thousands of high-quality</p>
+          <p class="p-1 bg-gray-400 text-white text-[10px] rounded-sm"> design assets, </p>
+          <p class="text-white text-[10px]"> audio, photos, Videos and templates. </p>
+          <p class="text-white text-[10px]"> Whether you’re a creator or a designer, find everything you need to bring
+          </p>
+          <p class="p-1 bg-gray-400 text-white text-[10px] rounded-sm"> your ideas to life. </p>
+        </div>
       </div>
-      <div class="flex max-w-screen-lg items-center mx-auto py-4 gap-2">
-        <p class="text-white text-[10px]">Unleash your creativity with thousands of high-quality</p>
-        <p class="p-1 bg-gray-400 text-white text-[10px] rounded-sm"> design assets, </p>
-        <p class="text-white text-[10px]"> audio, photos, Videos and templates. </p>
-        <p class="text-white text-[10px]"> Whether you’re a creator or a designer, find everything you need to bring
-        </p>
-        <p class="p-1 bg-gray-400 text-white text-[10px] rounded-sm"> your ideas to life. </p>
-      </div>
-
     </div>
 
-    <div class="p-4 sm:p-6 md:p-8 lg:p-3 xl:p-4 mt-1 max-w-screen-xl mx-auto px-4">
+    <!-- Discover Seasonal Collections -->
+    <div class="p-4 sm:p-6 md:p-8 lg:p-3 xl:p-4 mt-3 xl:max-w-screen-xl mx-auto px-4">
       <div class="flex justify-between">
         <div class="left flex items-center gap-2">
           <img src="../assets/icons/calendar-icon.png" alt="calendericon" class="w-3 h-3" />
@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mt-3 max-w-screen-xl mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mt-3 xl:max-w-screen-xl mx-auto px-4">
       <div class="bg-cover bg-no-repeat bg-[url('/images/S5.png')] rounded-lg shadow-lg
       flex items-center justify-center h-[58px] w-full">
         <p class="text-white text-base font-bold"> January 1</p>
@@ -74,8 +74,8 @@
       </div>
     </div>
 
-    <!-- 3rd example -->
-    <div class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 bg-[#EFF1D9] mt-8 max-w-screen-xl mx-auto px-4">
+    <!-- Discover our current offers -->
+    <div class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 bg-[#EFF1D9] mt-10 xl:max-w-screen-xl mx-auto px-4">
       <h2 class="text-xl font-bold p-1">Discover our current offers</h2>
       <p class="text-base font-light p-1">
         Explore exclusive digital assets from top creators, available for
@@ -83,22 +83,22 @@
       </p>
       <div class="flex justify-between p-1">
         <div>
-          <button class="rounded-md bg-black border-2 text-white pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md bg-black border-2 text-white hover:bg-white hover:text-black pl-3 pr-3 pt-1 pb-1">
             All
           </button>
-          <button class="rounded-md bg-black border-2 text-white pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md bg-black border-2 text-white hover:bg-white hover:text-black pl-3 pr-3 pt-1 pb-1">
             Special offer
           </button>
-          <button class="rounded-md bg-black border-2 text-white pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md bg-black border-2 text-white hover:bg-white hover:text-black pl-3 pr-3 pt-1 pb-1">
             Mockups
           </button>
-          <button class="rounded-md bg-white border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md bg-black text-white hover:bg-white hover:text-black border-2 pl-3 pr-3 pt-1 pb-1">
             Stationery
           </button>
-          <button class="rounded-md bg-black border-2 text-white pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md bg-black border-2 text-white hover:bg-white hover:text-black pl-3 pr-3 pt-1 pb-1">
             Presets
           </button>
-          <button class="rounded-md bg-black border-2 text-white pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md bg-black border-2 text-white hover:bg-white hover:text-black pl-3 pr-3 pt-1 pb-1">
             Themes
           </button>
         </div>
@@ -112,30 +112,30 @@
         </div>
       </div>
       <div
-        class="flex flex-col md:flex-row mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-screen-xl mx-auto px-4">
+        class="flex flex-col md:flex-row mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 xl:max-w-screen-xl mx-auto px-4">
         <div class="flex-1 rounded-lg" v-for="(card, index) in offersCards">
           <OffersCards :key="index" :card="card" />
         </div>
       </div>
     </div>
 
-    <!-- 4th example -->
-    <div class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 mt-8 max-w-screen-xl mx-auto px-4">
+    <!-- Browse by collections -->
+    <div class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 mt-5 xl:max-w-screen-xl mx-auto px-4">
       <p class="text-xl font-bold custom-underline">Browse by collections</p>
       <p class="text-base font-light p-1">
         Discover endless possibilities with our curated digital resources,
         perfect for all your creative needs.
       </p>
     </div>
-
     <div
-      class="flex flex-col md:flex-row mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-xl mx-auto px-4">
+      class="flex flex-col md:flex-row mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 xl:max-w-screen-xl mx-auto px-4">
       <div class="flex-1 rounded-lg" v-for="(card, index) in cardsData">
         <Cards :key="index" :card="card" />
       </div>
     </div>
 
-    <div class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 mt-8 max-w-screen-xl mx-auto px-4">
+    <!-- Fonts Collection -->
+    <div class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 mt-4 xl:max-w-screen-xl mx-auto px-4">
       <h2 class="text-xl font-bold p-1">Fonts Collection</h2>
       <p class="text-base font-light p-1">
         Find the perfect fonts to give your designs a unique and professional
@@ -143,28 +143,28 @@
       </p>
       <div class="flex justify-between p-1">
         <div class="flex gap-2">
-          <button class="rounded-md bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
             All
           </button>
-          <button class="rounded-md bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
             Serif
           </button>
-          <button class="rounded-md bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
             Sans-Serif
           </button>
-          <button class="rounded-md bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
             Slab-Serif
           </button>
-          <button class="rounded-md bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
             Display
           </button>
-          <button class="bg-[#DBF226] border-2 text-black rounded-md pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
             Script
           </button>
-          <button class="rounded-md bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
             Monospaced-width
           </button>
-          <button class="rounded-md bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
             Variable
           </button>
         </div>
@@ -179,8 +179,7 @@
       </div>
     </div>
 
-    <!-- 5th example -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-10 gap-2">
+    <div class="grid grid-cols-10 gap-2">
       <div class="rounded-lg shadow-lg">
         <img class="w-['210px'] h-['140']" src="/images/sm-banner1.png" alt="s1" />
       </div>
@@ -213,10 +212,10 @@
       </div>
     </div>
 
-    <!-- 3rd example -->
-    <div class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 bg-[#EFF1D9] mt-8">
-      <div class="flex items-center justify-between p-1 max-w-screen-xl mx-auto px-4">
-        <div>
+    <!-- Featured Creators of the Week -->
+    <div class="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-4 bg-[#EFF1D9] mt-14">
+      <div class="flex items-center justify-between p-1 xl:max-w-screen-xl mx-auto px-4">
+        <div class="mt-5">
           <h2 class="text-xl font-bold p-1 custom-underline">
             Featured Creators of the Week
           </h2>
@@ -244,7 +243,7 @@
 
     <!-- <Carousel />  -->
     <!-- Choose plan view -->
-    <div class="max-w-screen-lg mx-auto px-4 mt-8">
+    <div class="xl:max-w-screen-lg mx-auto px-4 mt-10">
       <div>
         <h2 class="text-xl p-1">
           <b>Choose the Plan </b> That Fits Your Needs
@@ -255,10 +254,11 @@
         </p>
       </div>
 
-      <div class="flex flex-col md:flex-row mt-4 gap-4">
+      <div class="flex xl:flex-row md:flex-col sm:flex-col flex-col mt-4 gap-4">
         <!-- Free Plan -->
-        <div class="flex-1 md:basis-1/3 rounded-md shadow-lg border-2 py-10 px-8">
-          <h2 class="text-xl p-1 font-bold">Free Plan</h2>
+        <div class="flex xl:flex-col md:flex-row sm:flex-row flex-col md:basis-1/3 rounded-md shadow-lg border-2 py-10 px-8">
+          <div>
+            <h2 class="text-xl p-1 font-bold">Free Plan</h2>
           <p class="text-base font-light p-1">
             Join Thortok today with our free plan and enjoy access to a curated
             selection of design assets, templates, and photos.
@@ -266,9 +266,10 @@
           <button class="rounded-md bg-[#DBF226] px-10 py-4">
             Get started for Free!
           </button>
-          <p class="font-[700] text-[17px] p-2">No commitment required:</p>
+          </div>
           <div class="space-y-2">
             <!-- Features -->
+            <p class="font-[700] text-[17px] p-2">No commitment required:</p>
             <div class="flex items-center gap-3">
               <div class="rounded-full flex items-center justify-center w-6 h-6 bg-[#DBF226]">
                 <img class="w-4 h-4" src="../assets/icons/tick.png" alt="tick icon" />
@@ -300,17 +301,17 @@
               <p class="text-[12px]"><b>Earn money </b> with the affiliate program</p>
             </div>
             <!-- Additional features... -->
+            <p class="text-green-600 text-[14px] font-[400] py-4">
+              Sign up and take advantage of all these benefits to boost your
+              creativity!
+            </p>
           </div>
-          <p class="text-green-600 text-[14px] font-[400] mt-5">
-            Sign up and take advantage of all these benefits to boost your
-            creativity!
-          </p>
         </div>
 
         <!-- Pro Plan -->
         <div class="flex-2 md:basis-2/3 rounded-md shadow-lg border-2 p-10">
           <h2 class="text-xl p-1 font-bold">Pro Plan</h2>
-          <div class="flex flex-col md:flex-row gap-4 mt-6">
+          <div class="flex flex-col md:flex-row sm:flex-row gap-4 mt-6">
             <!-- Left Section -->
             <div class="flex-1 flex flex-col gap-4">
               <p class="text-base font-light p-1">
@@ -396,12 +397,12 @@
 
 
     <!-- Monetize your Talent -->
-    <div class="mt-8">
+    <div class="mt-12">
       <MonetizeTalent />
     </div>
 
     <!-- Freelance Service Programs -->
-    <div class="flex flex-col md:flex-row max-w-screen-lg mx-auto px-4 mt-8">
+    <div class="flex flex-col md:flex-row max-w-screen-lg mx-auto px-4 mt-12">
       <div class="w-[570px] h-[350px] max-w-full max-h-[350px] bg-[#EFF1D9] md:w-full md:h-auto">
         <img src="/images/freelance-img.png" alt="freelance-img" class="w-full h-full object-cover md:object-contain">
       </div>

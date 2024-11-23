@@ -26,7 +26,7 @@
       <p class="text-lg font-bold">{{ card?.title }}</p>
       <div class="flex flex-wrap gap-2">
         <button
-          class="px-3 py-2 border rounded-md bg-gray-200 text-tiny whitespace-nowrap"
+          class="px-3 py-2 border rounded-md bg-gray-200 hover:bg-[#DBF226] text-tiny whitespace-nowrap"
           v-for="(tag, index) in card?.tags"
           :key="index"
         >
