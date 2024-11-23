@@ -143,28 +143,29 @@
       </p>
       <div class="flex justify-between p-1">
         <div class="flex gap-2">
-          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
-            All
-          </button>
-          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226]  bg-gray-200 border-2 text-black px-4 py-2 text-sm sm:text-base">
+          All
+        </button>
+
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1 text-sm sm:text-base">
             Serif
           </button>
-          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1 text-sm sm:text-base">
             Sans-Serif
           </button>
-          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1 text-sm sm:text-base">
             Slab-Serif
           </button>
-          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1 text-sm sm:text-base">
             Display
           </button>
-          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1 text-sm sm:text-base">
             Script
           </button>
-          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1 text-sm sm:text-base">
             Monospaced-width
           </button>
-          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1">
+          <button class="rounded-md hover:bg-[#DBF226] bg-gray-200 border-2 text-black pl-3 pr-3 pt-1 pb-1 text-sm sm:text-base">
             Variable
           </button>
         </div>
